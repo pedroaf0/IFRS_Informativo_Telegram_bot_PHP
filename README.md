@@ -1,5 +1,8 @@
-# IFRS_Informativo_Telegram_bot
-Receba as principais novidades do IFRS no seu Telegram
+# 📨 IFRS Informativo Telegram bot 📲
+
+> Receba as principais **novidades** do IFRS no seu **Telegram**  🔔
+
+
 
 ## Como aplicar para outro IF 
 - Baixe a última versão funcional [clicando aqui](https://github.com/pedroaf0/IFRS_Informativo_Telegram_bot/releases/download/v1.0/IFRS_Informativo_Telegram_bot.release.1.rar "download/v1.0/IFRS_Informativo_Telegram_bot.release.1.rar").
