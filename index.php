@@ -68,7 +68,7 @@ $tmessage = json_decode($response)[0]->title->rendered."\n\n".
              CURLOPT_TIMEOUT => 30,
              CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
              CURLOPT_CUSTOMREQUEST => "GET",
-             CURLOPT_POSTFIELDS => "{\n\t\"chat_id\":\"-1001168464133\",\n\"photo\":\"".$meta_image."\",\n\t\"parse_mode\":\"Markdown\",\n\t\"caption\":\"".$message."\"\n}",
+             CURLOPT_POSTFIELDS => "{\n\t\"chat_id\":\"".$chat_id."\",\n\"photo\":\"".$meta_image."\",\n\t\"parse_mode\":\"Markdown\",\n\t\"caption\":\"".$message."\"\n}",
              CURLOPT_HTTPHEADER => array(
                "content-type: application/json"
              ),
