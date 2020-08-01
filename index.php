@@ -6,7 +6,7 @@ require_once './env.php';
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
-  CURLOPT_URL => "https://ifrs.edu.br/sertao/?rest_route=%2Fwp%2Fv2%2Fposts",
+  CURLOPT_URL => $base_url."?rest_route=%2Fwp%2Fv2%2Fposts",
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => "",
   CURLOPT_MAXREDIRS => 10,
