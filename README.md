@@ -2,7 +2,9 @@
 
 > Receba as principais **novidades** do IFRS no seu **Telegram**  🔔
 
+![](https://miro.medium.com/max/875/1*MOYp6dA37Srf452kHA6BaA.jpeg)
 
+Saiba mais: https://pedroaf0.medium.com/criando-um-canal-informativo-no-telegram-usando-php-9d8a12279389
 
 ## Como aplicar para outro IF 
 - Baixe a última versão funcional [clicando aqui](https://github.com/pedroaf0/IFRS_Informativo_Telegram_bot/releases/download/v1.0/IFRS_Informativo_Telegram_bot.release.1.rar "download/v1.0/IFRS_Informativo_Telegram_bot.release.1.rar").
