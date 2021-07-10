@@ -2,33 +2,11 @@
 
 require_once './env.php';
 
-
-$curl = curl_init();
-
-curl_setopt_array($curl, array(
-  CURLOPT_URL => $base_url."?rest_route=%2Fwp%2Fv2%2Fposts",
-  CURLOPT_RETURNTRANSFER => true,
-  CURLOPT_ENCODING => "",
-  CURLOPT_MAXREDIRS => 10,
-  CURLOPT_TIMEOUT => 30,
-  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-  CURLOPT_CUSTOMREQUEST => "GET",
-  CURLOPT_POSTFIELDS => "",
-  CURLOPT_COOKIE => "wordpress_test_cookie=WP%2BCookie%2Bcheck",
-));
-
-$response = curl_exec($curl);
-$err = curl_error($curl);
-
-curl_close($curl);
-
-if ($err) {
-  echo "cURL Error #:" . $err;
-} else {
+$Body = file_get_contents('php://input');
+echo $Body;
 
 
-
-$page_content = file_get_contents(json_decode($response)[0]->link);
+$page_content = file_get_contents(json_decode($Body)->url);
 
 $dom_obj = new DOMDocument();
 $dom_obj->loadHTML($page_content);
@@ -47,12 +25,12 @@ if($meta->getAttribute('property')=='og:description'){
 }
 
 
-}
+
 $message = "*".json_decode($response)[0]->title->rendered."*\n\n".
            "_".htmlspecialchars_decode($meta_description)."_\n\n".
-           "📝[Saiba mais](".json_decode($response)[0]->link.")📝";
+           "📝[Saiba mais](".json_decode($Body)->url.")📝";
 $tmessage = json_decode($response)[0]->title->rendered."\n\n".
-           "Saiba mais: ".json_decode($response)[0]->link;
+           "Saiba mais: ".json_decode($Body)->url;
 
            echo $message;
 
