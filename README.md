@@ -32,9 +32,9 @@ ex: [`$telegram_token = "<SEU TOKEN>";`](https://github.com/pedroaf0/IFRS_Inform
 Serviços de hospedagem gratuita: [000webhost](www.000webhost.com "000webhost") e [heroku](www.heroku.com "heroku")
 
 
-- Acesse o site [automate.io](http://automate.io "automate.io") e crie um bot com o trigger:`RSS Feed` e action:`WebHook`
+- Acesse o site [ifttt.com](http://ifttt.com "ifttt.com") e crie um bot com o trigger:`RSS Feed` e action:`WebHook`
 ex:
-![photo_2020-08-01_11-56-33](https://user-images.githubusercontent.com/54213349/89104240-2f738b00-d3ee-11ea-8ea4-cff52278dbf6.jpg)
+![If New feed item from https_ifrs edu br_sertao_feed, then Make a web request Settings - IFTTT-1625958469027](https://user-images.githubusercontent.com/54213349/125178517-2b361d00-e1bc-11eb-8f15-e513768ba809.png)
 
 
 - Pronto! Se surgir alguma duvida entre em contato comigo pelo Telegram: ![https://t.me/pedroaf0](https://img.shields.io/badge/t.me/-pedroaf0-blue?logo=telegram "https://t.me/pedroaf0") 
