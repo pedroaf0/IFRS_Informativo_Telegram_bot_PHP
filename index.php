@@ -26,10 +26,10 @@ if($meta->getAttribute('property')=='og:description'){
 
 
 
-$message = "*".json_decode($response)[0]->title->rendered."*\n\n".
+$message = "*".json_decode($Body)->title."*\n\n".
            "_".htmlspecialchars_decode($meta_description)."_\n\n".
            "📝[Saiba mais](".json_decode($Body)->url.")📝";
-$tmessage = json_decode($response)[0]->title->rendered."\n\n".
+$tmessage = json_decode($Body)->title."\n\n".
            "Saiba mais: ".json_decode($Body)->url;
 
            echo $message;
