@@ -13,11 +13,6 @@ Saiba mais: https://pedroaf0.medium.com/criando-um-canal-informativo-no-telegram
 - Crie um canal publico e dicione o @ no `env.php`
 ex: [`$chat_id = '@ifrssertao';`](https://github.com/pedroaf0/IFRS_Informativo_Telegram_bot/blob/master/env.php.template#L6 "ver linha")
 
-
-- Adicione a base da URL do site do seu IF no arquivo `env.php`
-ex: [`$base_url = 'https://ifrs.edu.br/sertao/'`](https://github.com/pedroaf0/IFRS_Informativo_Telegram_bot/blob/master/env.php.template#L2 "ver linha")
-
-
 - Crie um bot no telegram através do [@BotFather](https://t.me/BotFather "@BotFather"), ele lhe fornecerá um **token**.
 
 
